@@ -3,9 +3,21 @@
 @tailwind components;
 @tailwind utilities;
 body {
-  font-family: 'Arial', sans-serif;
+  /* font-family: 'Arial', sans-serif; */
   margin: 0;
   padding: 0;
+  background-color: #00040F;
+  
+}
+.logo{
+  display: flex;
+}
+
+.logo-name{
+margin-top: 10px;
+}
+.logo-color{
+  color: #5CE1E6;
   
 }
 

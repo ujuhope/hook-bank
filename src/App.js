@@ -2,18 +2,18 @@ import React from 'react'
 
 
 
-function App(props) {
+// function App(props) {
  
-  return (
-    <div>
-      hello {props.name} {props.surname}
+//   return (
+//     <div>
+//       hello {props.name} {props.surname}
       
       
-    </div>
-  );
-}
+//     </div>
+//   );
+// }
 
-export default App
+// export default App
 
 // import React from "react";
 // import Header from "./Components/Header";

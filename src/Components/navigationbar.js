@@ -1,6 +1,5 @@
-// import React from "react";
-
-// import "../App.css";
+import "../App.css";
+import logo from "../assets/logo.png";
 
 import React, { useState } from "react";
 
@@ -8,10 +7,14 @@ const Navbar = () => {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-blue-500 p-4">
+    <nav className=" p-4">
       <div className="container mx-auto flex items-center justify-between">
-        {/* Logo */}
-        <div className="text-white text-xl font-bold">YourLogo</div>
+        <div className="logo">
+          <img src={logo} alt="logo"></img>
+          <div className="logo-name text-white  font-bold">
+            Hook<span className="logo-color">Bank</span>
+          </div>
+        </div>
 
         {/* Navigation Links */}
         <div className="hidden md:flex space-x-4">
@@ -19,13 +22,13 @@ const Navbar = () => {
             Home
           </a>
           <a href="#" className="text-white">
-            About
+            About Us
           </a>
           <a href="#" className="text-white">
-            Services
+            Feautures
           </a>
           <a href="#" className="text-white">
-            Contact
+            Solution
           </a>
         </div>
 
@@ -55,19 +58,19 @@ const Navbar = () => {
 
       {/* Responsive Menu (Hidden on Larger Screens) */}
       {isMenuOpen && (
-        <div className="md:hidden bg-blue-500 p-2">
+        <div className="md:hidden p-10">
           <div className="flex flex-col space-y-2">
             <a href="#" className="text-white">
               Home
             </a>
             <a href="#" className="text-white">
-              About
+              About Us
             </a>
             <a href="#" className="text-white">
-              Services
+              Feautures
             </a>
             <a href="#" className="text-white">
-              Contact
+              Solution
             </a>
           </div>
         </div>
@@ -77,5 +80,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-
